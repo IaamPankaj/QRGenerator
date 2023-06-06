@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_color"
+
+    tools:context=".URL_Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="URL  QR"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:gravity="center" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white"
+        android:layout_marginEnd="32dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|top"
+        android:lines="1"
+        android:maxLines="1"
+        android:hint="URL"
+        android:inputType="textUri"
+        android:layout_marginTop="30dp"
+        android:imeOptions="actionDone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/urlQR"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/qr_code" />
+
+    <Button
+        android:id="@+id/btnURL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/round"
+        android:textAllCaps="false"
+        android:text="Submit" />
+
+
+
+
+
+</LinearLayout>

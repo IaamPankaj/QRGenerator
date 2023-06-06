@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/generate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate QR Code" />
+
+    <EditText
+        android:id="@+id/network_name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Network Name" />
+
+    <EditText
+        android:id="@+id/password_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password" />
+
+    <EditText
+        android:id="@+id/encryption_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Encryption Type (WPA/WEP)" />
+
+    <ImageView
+        android:id="@+id/qrr"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/qr_code" />
+
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_color"
+    tools:context=".Location_Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location QR"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:gravity="center" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        app:boxStrokeColor="@color/white"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white"
+
+
+        android:hint="Enter Lat">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edLat"
+            android:gravity="start|top"
+            android:lines="1"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:inputType="numberSigned"
+            android:digits="-.01234567890"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white"
+
+        android:hint="Enter Long">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edLong"
+            android:gravity="start|top"
+            android:lines="1"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:inputType="numberSigned"
+            android:digits="-.01234567890"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/locationQR"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/qr_code" />
+
+    <Button
+        android:id="@+id/btnLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/round"
+        android:text="Submit"
+
+        android:textColor="@color/white"
+        android:textAllCaps="false" />
+
+
+
+
+
+</LinearLayout>
